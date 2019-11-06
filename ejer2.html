@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <script>
+        var pilots = [
+            {
+                id: 2,
+                name: "Wedge Antilles",
+                faction: "Rebels",
+            },
+            {
+                id: 8,
+                name: "Ciena Ree",
+                faction: "Empire",
+            },
+            {
+                id: 40,
+                name: "Iden Versio",
+                faction: "Empire",
+            },
+            {
+                id: 66,
+                name: "Thane Kyrell",
+                faction: "Rebels",
+            }
+        ];
+
+        let rebel=pilots.filter(rebeldes => rebeldes.faction='Rebels');
+        console.log(rebel);
+
+    </script>
+
+</body>
+
+</html>

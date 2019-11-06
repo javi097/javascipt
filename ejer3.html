@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 2</title>
+</head>
+
+<body>
+
+    <script>
+        var personnel = [
+            {
+                id: 5,
+                name: "Luke Skywalker",
+                pilotingScore: 98,
+                shootingScore: 56,
+                isForceUser: true,
+            },
+            {
+                id: 82,
+                name: "Sabine Wren",
+                pilotingScore: 73,
+                shootingScore: 99,
+                isForceUser: false,
+            },
+            {
+                id: 22,
+                name: "Zeb Orellios",
+                pilotingScore: 20,
+                shootingScore: 59,
+                isForceUser: false,
+            },
+            {
+                id: 15,
+                name: "Ezra Bridger",
+                pilotingScore: 43,
+                shootingScore: 67,
+                isForceUser: true,
+            },
+            {
+                id: 11,
+                name: "Caleb Dume",
+                pilotingScore: 71,
+                shootingScore: 85,
+                isForceUser: true,
+            },
+        ];
+
+        
+        let suma1=personnel.filter(per => per.isForceUser==true)
+        .map(per => per.pilotingScore)
+        .reduce((suma,acu) => suma+acu,0);
+            
+        let suma2=personnel.filter(per => per.isForceUser==true)
+        .map(per => per.shootingScore)
+        .reduce((suma,acu) => suma+acu,0);
+
+        console.log(suma1+suma2);
+        
+
+    </script>
+
+</body>
+
+</html>
